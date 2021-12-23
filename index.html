@@ -425,42 +425,7 @@
             }
         }
     </script>
-    <script>
-        // 调用图片移动
-
-        imgs();
-
-        function imgs() {
-            let img = document.querySelector('img.hutao');
-            let stepX = parseInt((Math.random() * 3) + 3);
-            let stepY = parseInt((Math.random() * 4) + 5);
-            let W = screen.width;
-            let H = screen.height - 180;
-            randomMove(img);
-
-            function randomMove(node) {
-                setInterval(() => {
-                    if (node.offsetLeft >= W) {
-                        stepX *= -1;
-                    }
-                    if (node.offsetLeft < 0) {
-                        stepX *= -1;
-                    }
-
-                    if (node.offsetTop >= H) {
-                        stepY *= -1;
-                    }
-                    if (node.offsetTop < 0) {
-                        stepY *= -1;
-                    }
-
-                    node.style.left = node.offsetLeft + stepX + 'px';
-                    node.style.top = node.offsetTop + stepY + 'px';
-
-                }, 20);
-            }
-        }
-    </script>
+    
 </body>
 
 </html>
