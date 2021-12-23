@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+input {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.w {
+    position: relative;
+    margin: 0 auto;
+}
+
+#dowebok>div.section {
+    position: relative !important;
+}
+
+#dowebok>div.section:nth-child(1) {
+    background-image: url(../images/1背景图.jpg);
+    background-size: 100% 100%;
+}
+
+#dowebok>div.section:nth-child(1) div.hint {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+
+div.section:nth-child(1) div.hint>img {
+    width: 70px;
+    height: 85px;
+}
+
+div.section:nth-child(1) a.gameDown {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    width: 343px;
+    height: 133px
+}
+
+div.section:nth-child(1) div.text {
+    position: absolute;
+    left: 50%;
+    bottom: 134px;
+    transform: translateX(-45%);
+}
+
+div.section:nth-child(1) div.text>img {
+    width: 828px;
+    height: 282px;
+}
+
+div.section:nth-child(1) a.officialWebsite {
+    position: absolute;
+    right: 85px;
+    top: 30px;
+}
+
+div.section:nth-child(1) a.officialWebsite>img {
+    width: 152px;
+    height: 44px;
+}
+
+
+/* 视频播放按钮 */
+
+div.btnVideo {
+    position: absolute;
+    bottom: 206px;
+    right: 435px;
+}
+
+div.btnVideo:hover {
+    cursor: pointer;
+}
+
+
+/* 遮罩层 */
+
+div.mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 1;
+    display: none;
+}
+
+
+/* 第二屏开始 */
+
+#dowebok>div.section:nth-child(2) {
+    background-image: url(../images/2背景图.jpg);
+    background-size: 100% 100%;
+}
+
+#dowebok>div.section:nth-child(2) div.headerText {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#dowebok>div.section:nth-child(2) div.activity {
+    position: absolute;
+    left: 50%;
+    top: 195px;
+    transform: translateX(-50%);
+    width: 910px;
+    height: 600px;
+}
+
+#dowebok>div.section:nth-child(2) div.activity div {
+    float: left;
+    width: 450px;
+    height: 600px;
+}
+
+#dowebok>div.section:nth-child(2) div.activity div.left {
+    margin-right: 10px;
+}
+
+#dowebok>div.section:nth-child(2) div.activity img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 第三屏开始 */
+
+#dowebok>div.section:nth-child(3) {
+    background-image: url(../images/3背景图.jpg);
+    background-size: 100% 100%;
+}
+
+div.ContentBox {
+    position: absolute;
+    right: 240px;
+    top: 270px;
+}
+
+div.intelligence {
+    width: 150px;
+    height: 76px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+div.intelligence img {
+    width: 100%;
+    height: 100%;
+}
+
+div.List {
+    margin: 0 auto;
+}
+
+div.List li img {
+    display: block;
+    margin: 0 auto;
+}
+
+div.List li:nth-child(1) {
+    margin-bottom: 10px;
+}
+
+
+/* div.ContentList {
+    width: 500px;
+    height: 30px;
+    background-color: red;
+} */
+
+div.ContentList li {
+    float: left;
+}
+
+div.personageShow {
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    width: 392px;
+}
+
+
+/* div.ContentList li:nth-child(1) {
+    background-image: url(../images/1角.png);
+    background-size: 150px 160px;
+}
+
+div.ContentList li:nth-child(1):hover {
+    background-image: url(../images/1角特.png);
+} */
+
+
+/* 第四屏start */
+
+#dowebok>div.section:nth-child(4) {
+    background-image: url(../images/4背景图.jpg);
+    background-size: 100% 100%;
+}
+
+div.active-version {
+    position: absolute;
+    left: 46.4%;
+    top: 30px;
+    transform: translateX(-50%);
+    width: 501px;
+    height: 105px;
+}
+
+div.active-version img {
+    text-align: center;
+}
+
+div.focus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 850px;
+    height: 610px;
+    overflow: hidden;
+}
+
+div.focus ul {
+    position: absolute;
+    width: calc(850px * 4);
+}
+
+div.focus li {
+    position: relative;
+    float: left;
+    width: 850px;
+    height: 610px;
+}
+
+div.focus img {
+    width: 850px;
+    height: 610px;
+}
+
+div.focus img.bgAfter {
+    position: absolute;
+    left: -9px;
+    top: -20px;
+    width: 870px;
+    height: 654px;
+    z-index: 9;
+}
+
+div.focus img.focusOne {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 550px;
+    z-index: 5;
+}
+
+
+/* 按钮 */
+
+div.btnRight,
+div.btnLeft,
+div.btnLeft img,
+div.btnRight img {
+    width: 100px;
+    height: 100px;
+}
+
+div.btnRight {
+    position: absolute;
+    left: 440px;
+    top: 480px;
+}
+
+div.btnLeft {
+    position: absolute;
+    top: 480px;
+    left: 1435px;
+}
+
+div.btnLeft:hover,
+div.btnRight:hover {
+    cursor: pointer;
+}
+
+
+/* div.btnLeft {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+} */
+
+#dowebok>div.section:nth-child(5) {
+    background-image: url(../images/5背景图.jpg);
+    background-size: 100% 100%;
+}
+
+div.top {
+    width: 680px;
+    margin: 0 auto;
+    margin-top: -200px;
+}
+
+img.hutao {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99999999999;
+}
